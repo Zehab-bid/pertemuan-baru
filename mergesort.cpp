@@ -4,6 +4,39 @@ using namespace std;
 int arr[20], B[20]; // Array utama dan array bantu
 int n;
 
+void input()
+void input()
+
+{
+    void input()
+{
+    while (true)
+    {
+        cout << "masukkan panjang element array :";
+        cin >> n;
+
+        if (n <= 20)
+        {
+            break;
+        }
+        else 
+        {
+            cout << "\nArray yang anda masukkan maksimal 20 elemen.\n";
+        }
+    }
+    cout << endl;
+    cout << "==================" << endl;
+    cout << "masukkan elemen array" << endl;
+    cout << "==================" << endl;
+
+    for (int i = 0; i < n; i++)
+    {
+        cout << "data ke-" << (i + 1) << ": ";
+        cin >> arr[i];
+    }
+}
+
+}
 
 void mergeSort(int low,int high){
     if (low >= high)
@@ -42,6 +75,14 @@ void mergeSort(int low,int high){
         j++;            // step 4e.ii
         k++;            // step 4e.iii
     }
+
+    while (i <= mid)
+    {
+        B[k] = arr [i];
+        i++;
+        k++;
+    }
+
 
 
 }
